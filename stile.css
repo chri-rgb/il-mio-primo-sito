@@ -1,43 +1,144 @@
-body {
-	background: yellowgreen;
-	font-family: "roboto", sans-serif;
-	border-radius: 10px;
-	box-shadow: 0px 4px 8px rgba(0.1, 0, 0, 0.1);
-}
-h1{
-	font-size: 50px;
-	color: #f15c62;
-	text-transform: uppercase;
-	text-align: center; 
-	background-color: purple;
-}
-p{
-	background: #fff;
-	padding: 15px;
-}
-.dark{
-	background: #333;
-	color: #fff;
-}
-#colorfull{
-	background: #f15c62;
-	color: #333;
-}
-#navigazione{text-align: center;}
-#navigazione li{display: inline;
-a{color: #f15c62}
-}
-html {
-	background: floralwhite;
-	font-family: "roboto", sans-serif;
+body h1,h2, p, ul, li{
+	margin: 0;
+	padding: 5;
+	list-style: none;
+	box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-	#colorfull {
-		font-size: 20px;
-		padding: 10px;
+body{
+	font-family: arial, sans-serif;
+	background-color: linear-gradient(120deg, #1e3c72,#2a5298);
+	color: white;
+	margin: 0;
+}
+header {
+	background-color: #333;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+}
+header h1 {
+	margin-bottom: 10px;
+}
+nav ul{
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	margin: 15px 0;
+	padding: 10 px 0;
+	text-align: cente;
+	border-bottom: 1px solid #555;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: bold;
+	display: block;
+}
+nav a:hover {
+	color: #ff6347;
+	text-decoration: underline;
+}
+main {
+	padding: 20px;
+	text-align: center;
+}
+main h2 {
+	margin-bottom: 10px;
+	color: #333;
+}
+main p {
+	margin-bottom: 20px;
+}
+.immagine {
+	max-width: 300px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+figcaption {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+.main-title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 5rem;
+	text-align: center;
+	color: blue;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	padding: 20px 0;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	animation: typing 4s steps(40, end), blink 0.7s step-end infinite alternate;
+}
+@keyframes typing {
+	from {
+		width: 50%;
+	}
+	to {
+		width: 100%;
 	}
 }
-#home {
-	padding: 20px;
+@keyframes blink {
+	from {
+		border-color: white;
+	}
+	to {
+		border-color: transparent;
+	}
 }
+
+.main-title:hover {
+	transform: scale(1.1);
+	color: #FFD700;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.7);
+	cursor: progress;
+}
+.hamburger {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	z-index: 1000;
+}
+.hamburger span {
+	background: white;
+	height: 3px;
+	width: 25px;
+	margin: 3px 0;
+	transition: all 0.3 ease;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Nascondi il menu */
+  width: 250px;
+  height: 100%;
+  background: #444;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-menu.active {
+  left: 0; /* Porta il menu in vista */
+}
+

@@ -1,4 +1,93 @@
+/* Stile generale per il corpo della pagina */
 body {
-	background: coral;
-	font-family: tahoma;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Stile per l'intestazione */
+header {
+  background-color: #ff6347; /* Colore accattivante per l'intestazione */
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Stile per la sezione del catalogo */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Griglia responsiva */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* Stile per ogni scheda del prodotto */
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  color: #ff6347;
+  margin-top: 10px;
+}
+
+.product-card .description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  height: 60px; /* Limita l'altezza della descrizione */
+  overflow: hidden;
+}
+
+.product-card .buy-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .buy-button:hover {
+  background-color: #e5533e;
+}
+
+/* Effetto hover sulle schede del prodotto */
+.product-card:hover {
+  transform: translateY(-10px); /* Solleva la scheda quando ci passi sopra */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumenta l'ombra */
 }

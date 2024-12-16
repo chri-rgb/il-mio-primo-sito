@@ -1,21 +1,50 @@
-<!doctype html>
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>pagina 3</title>
-	<link rel="stylesheet" type="text/css" href="stile3.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo - Oggetti in Vendita</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Font Google -->
+  <link rel="stylesheet" href="style.css"> <!-- Link al tuo CSS -->
 </head>
 <body>
-	<h1>CATALOGO</h1>
-	<ul>
-		<li> <a href="index.html"> Home </a>		
-			<li> <a href="pagina-2.html"> ASSISTENZA </a> </li>
-		<li> CATALOGO </li>
-	</ul>
-	<h2>giochi del momento</h2>
-	<p>i migliori giochi esistenti </p>
+
+  <header>
+    <h1>Catalogo di Oggetti</h1>
+    <p>Scopri i nostri fantastici prodotti!</p>
+  </header>
+
+  <section class="catalog">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Prodotto 1">
+      <h3>Prodotto 1</h3>
+      <p class="price">€49.99</p>
+      <p class="description">Descrizione breve del prodotto. Ottimo per tutti gli usi!</p>
+      <button class="buy-button">Acquista
+        <a href="pagina-acquisto.html"></a>
+        </button>
+      <form action="processa-acquisto.php" method="POST">
+        <input type="hidden" name="product-name" value="prodotto 1">
+        <input type="hidden" name="product-price" value="49.99">
+        <button type="submit" class="buy-button"> Acquista</button>
+      <a href="pagina-acquisto.html" class="buy-button">Aggiungi al carrello</a>
+    </form>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Prodotto 2">
+      <h3>Prodotto 2</h3>
+      <p class="price">€79.99</p>
+      <p class="description">Descrizione breve del prodotto. Elegante e durevole!</p>
+      <button class="buy-button">Acquista</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Prodotto 3">
+      <h3>Prodotto 3</h3>
+      <p class="price">€59.99</p>
+      <p class="description">Descrizione breve del prodotto. Il massimo della qualità!</p>
+      <button class="buy-button">Acquista</button>
+    </div>
+  </section>
 
 </body>
 </html>

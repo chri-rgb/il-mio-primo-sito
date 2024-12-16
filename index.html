@@ -3,28 +3,45 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="stile.css"/>
 </head>
 <body>
-	<h1>Il mio sito</h1>
+	<header>
+	<h1 class="main-title" ></h1>
+	<div class="hamburger" id="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</header>
+	<nav class="side-menu" id="sideMenu">
 	<ul>
 		<li>Home</li>
-		<li><a href="pagina-2.html"> ASSISTENZA</a> </li>
-		<li><a href="pagina-3.html"> CATALOGO</a> </li>
+		<li><a href="pagina-2.html">  CONTATTI  </a> </li>
+		<li><a href="pagina-3.html">  CATALOGO</a> </li>
 	</ul>
-	<h2>Home</h2>
-	<section id="home">
+</nav>
+<main>
+	<section id="intro">
+	<h2>Benvenuto!</h2>
 	   <p id= "colorfull"> qui potrai trovare tutto ciò che cerchi!</p>
 </section>
-<section id="contatti">
-<p class="dark"> secondo paragrafo nella home page</p>
-<ul id="navigazione">
+
+<section id="contenuto">
+<h2> secondo paragrafo </h2>
+<p> questo è il secondo paragrafo nella home page</p>
+<figure>
+	<img src="spider-man.jpg" alt="spider-man" class="immagine">
+	<figcaption> Spider-Man 2 - 2024</figcaption>
+</figure>
 </section>
-	<li>Home</li>
-	<li><a href="pagina-2.html">ASSISTENZA </a> </li>
-	<li> <a href="pagina-3.html"> CATALOGO </a></li>
-</ul>
+</main>
+
+<footer>
+	<p>&copy; 2024 il mio sito. tutti i diritti riservati.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
